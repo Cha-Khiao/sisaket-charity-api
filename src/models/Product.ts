@@ -22,7 +22,7 @@ export interface IProduct extends Document {
 
 const ProductSchema: Schema = new Schema({
   name: { type: String, required: true },
-  type: { type: String, enum: ['normal', 'mourning'], required: true },
+  type: { type: String, required: true },
   description: { type: String, default: '' },
   price: { type: Number, required: true },
   imageUrl: { type: String, required: true }, // สำคัญมากสำหรับ Frontend
