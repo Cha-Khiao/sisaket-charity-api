@@ -15,6 +15,7 @@ export interface IOrder extends Document {
     size: string;
     quantity: number;
     price: number;
+    imageUrl?: string;
   }>;
   createdAt: Date;
   updatedAt: Date;
@@ -40,7 +41,8 @@ const OrderSchema: Schema = new Schema({
     productName: { type: String, required: true },
     size: { type: String, required: true },
     quantity: { type: Number, required: true },
-    price: { type: Number, required: true }
+    price: { type: Number, required: true },
+    imageUrl: { type: String }
   }]
 }, { timestamps: true });
 

@@ -35,7 +35,8 @@ router.post('/', authenticateToken, async (req, res) => {
         productName: product.name,
         size: item.size,
         quantity: item.quantity,
-        price: product.price
+        price: product.price,
+        imageUrl: product.imageUrl
       });
     }
 
